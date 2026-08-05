@@ -7,7 +7,7 @@ This guide provides a comprehensive walkthrough for setting up the Antigravity I
 ## 1. Distro Installation
 
 ### Official Arch Image
-Download the latest `.wsl` or bootstrap file from the official mirror. To install Arch Linux with the custom name `vpn1`, run the following command in **PowerShell**:
+Download the latest `.wsl` or bootstrap file from the [official mirror](https://wiki.archlinux.org/title/Install_Arch_Linux_on_WSL). To install Arch Linux with the custom name `vpn1`, run the following command in **PowerShell**:
 
 ```powershell
 # Syntax: wsl --install --from-file <PathToWslFile> --name vpn1
