@@ -6,13 +6,24 @@ This guide provides a comprehensive walkthrough for setting up the Antigravity I
 
 ## 1. Distro Installation
 
-### Official Arch Image
-Download the latest `.wsl` or bootstrap file from the [official mirror](https://wiki.archlinux.org/title/Install_Arch_Linux_on_WSL). To install Arch Linux with the custom name `vpn1`, run the following command in **PowerShell**:
+Arch Linux must be installed as a WSL distribution named `vpn1`. Choose **one** of the two methods below — automated or manual
+
+### Method A: Automated Installation
+Install Arch Linux directly from the WSL catalog. Requires a recent Windows 11 / WSL build that ships the `archlinux` catalog entry:
+
+```powershell
+wsl --install archlinux --name vpn1
+```
+https://wiki.archlinux.org/title/Install_Arch_Linux_on_WSL
+### Method B: Manual Installation
+Download the latest `.wsl` image from [official mirror](https://wiki.archlinux.org/title/Install_Arch_Linux_on_WSL#Manual_installation), then install it from the file:
 
 ```powershell
 # Syntax: wsl --install --from-file <PathToWslFile> --name vpn1
-wsl --install --from-file archlinux-2025.xxxxx.wsl --name vpn1
+wsl --install --from-file archlinux-2026.xxxxx.wsl --name vpn1
 ```
+
+> Both methods produce the same result: a distro named `vpn1` that can be launched with `wsl -d vpn1`. Continue to the next section after **either** method succeeds.
 
 ### Launching the Distro
 ```bash
