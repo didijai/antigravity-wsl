@@ -76,6 +76,14 @@ wsl --manage vpn1 --set-default-user <username>
 wsl -d vpn1
 ```
 
+### Change New Shells Open in Home
+
+If your PowerShell session is open in a path that WSL can map to a Linux directory. it will open the WSL shell in that directory. To make sure every new interactive shell opens in your home directory, append `cd ~` to your `~/.bashrc`:
+
+```bash
+echo "cd ~" >> ~/.bashrc
+```
+
 ### Maintaining Antigravity (Windows Side)
 To keep the Windows-side IDE host up to date, use `winget`:
 
